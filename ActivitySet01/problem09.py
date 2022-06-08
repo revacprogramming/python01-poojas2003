@@ -1,10 +1,13 @@
 # Lists
+fname = input("Enter file name: ")
+fh = open(fname)
+lst=list()
 
-#filename = "dataset/romeo.txt"
-#s='Monty Python'
-#print(s[-1:-1])
-a='Hello'
-b=a+'there'
-print(b)
-c=a+'\t'+"there"
-print(c)
+for line in fh:
+      words= line.split()
+      for word in words:
+            if word  not in lst:
+                lst.append(word)
+                lst.sort()
+print(lst)
+
