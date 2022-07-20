@@ -2,6 +2,7 @@
 
 
 def computepay(h, r):
+  return 
     pass  # ...
 
 
